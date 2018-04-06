@@ -51,9 +51,21 @@
         <text x="30" y="250" textLength="150" lengthAdjust="spacingAndGlyphs"
         font-style="">{{description}}</text>
       </g>
+<!--
+        <switch>
+          <foreignObject x="25" y="210" width="160" height="60">
+            <p xmlns="http://www.w3.org/1999/xhtml">{{description}}</p>
+          </foreignObject>
+
+          <text x="30" y="250" textLength="150" lengthAdjust="spacingAndGlyphs"
+          font-style="">{{description}}</text>
+
+        </switch>
+-->
+
 
       <!-- Price box & text bundle -->
-      <g>
+      <g *ngIf="price != 0">
         <ellipse cx="105" cy="290" rx="35" ry="25"
          stroke="black" stroke-width="2"
          fill="white" fill-opacity = "0.95"/>
